@@ -14,7 +14,9 @@ let secretNumber = Math.trunc(Math.random() * 20) + 1;
 
 scoreBoard.textContent = score;
 highscoreBoard.textContent = highscore;
-numberBoard.textContent = secretNumber;
+// numberBoard.textContent = secretNumber;
+console.log('secret number', secretNumber);
+
 
 function dispalyMessage(message) {
     messageBoard.textContent = message
