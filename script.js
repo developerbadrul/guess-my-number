@@ -31,6 +31,10 @@ checkBtn.addEventListener('click', () => {
         dispalyMessage('🎉 Correct Number!')
         numberBoard.textContent = secretNumber;
         document.querySelector('body').style.backgroundColor = '#60b347';
+        if (score > highscore) {
+            highscore = score;
+            highscoreBoard.textContent = highscore;
+        }
     } else {
         if (score > 1) {
             dispalyMessage(guess > secretNumber ? '📈 Too high!' : '📉 Too low!')
